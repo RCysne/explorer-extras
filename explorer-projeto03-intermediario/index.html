@@ -20,7 +20,7 @@
         <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
       </header>
 
-      <form>
+      <form id="form-mentorship">
         <fieldset>
           <legend>Informações Pessoais</legend>
 
@@ -56,6 +56,7 @@
               <input type="text" id="mentor-name">
             </div>
           </fieldset>
+
           <fieldset>
             <legend >Seus horários disponíveis</legend>
             <p class="mentorship-time">Primeira mentoria</p>
@@ -91,8 +92,11 @@
           </div>
           </fieldset>
 
-
         </form>
+
+        <footer>
+          <input id="btn-submit" form="form-mentorship" type="submit" value="Salvar">
+        </footer>
       </div>
     </div>
   </body>

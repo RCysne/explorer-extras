@@ -43,7 +43,7 @@ header p {
 
 #container {
   margin: auto;
-  width: 750px;
+  width: 900px;
 }
 
 form {
@@ -69,6 +69,7 @@ legend {
   width: 100%;
   padding-bottom: 16px;
   color: #535971;
+  padding-top: 30px;
 }
 
 .input-wrapper {
@@ -130,6 +131,27 @@ legend {
   width: 100%;
 }
 
-.metorship-time {
-  
+.mentorship-time {
+  padding-top: 32px;
+  font-family: 'Staatliches', cursive;
+  color: #535971;
+}
+
+footer {
+  width: 100%;
+  background:  #535971;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0 0 20px 20px;
+}
+
+#btn-submit {
+
+  width: 70%;
+  height: 3rem;
+  background-color: #FF5374;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
 }
