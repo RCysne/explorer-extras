@@ -23,40 +23,7 @@
       </nav>
     </div>
     <div id="app"></div>
-    <script>
-      const routes = {
-        '/': './pages/home.html',
-        '/universe': './pages/universe.html',
-        '/exploration': './pages/exploration.html',
-        404: './pages/404.html'
-      }
 
-      //   console.log(routes['/universe'])
-
-      function route(event) {
-        event = event || window.event
-        event.preventDefault()
-
-        // Avisando ao histórico que a url está mudando, que o href está sendo alterado
-        window.history.pushState({}, '', event.target.href)
-        console.log(event.target.href)
-
-        handle()
-      }
-
-      function handle() {
-        const { pathname } = window.location
-        console.log(pathname)
-
-        const route = routes[pathname] || routes[404]
-
-        fetch(route)
-          .then(data => data.text())
-          .then(html => {
-            document.getElementById('app').innerHTML = html
-          })
-      }
-      handle()
-    </script>
+    <script type="module" src="./src/index.js"></script>
   </body>
 </html>
