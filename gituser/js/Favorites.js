@@ -58,8 +58,6 @@ export class FavoritesView extends Favorites {
 
   //--- Fazendo o update dos dados
 
-  // Depois da remoção, recriar a tabela com os dados atualizados
-  // Recriando a linha e depois adicionando no elemento pai com o append
   update() {
     this.removeAllTr()
 
